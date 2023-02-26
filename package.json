@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "storybook": "start-storybook -s ./.storybook watch-css"
   },
   "keywords": [],
@@ -23,6 +23,7 @@
     "@storybook/addon-essentials": "^6.5.16",
     "@storybook/addon-knobs": "^6.4.0",
     "@storybook/react": "^6.5.16",
+    "@testing-library/react": "^14.0.0",
     "@types/jest": "^29.2.4",
     "@types/node": "^18.13.0",
     "@types/react": "^18.0.28",

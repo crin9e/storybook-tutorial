@@ -1,6 +1,6 @@
 import React from "react";
-import { Cell } from "./Cell";
-import { cellMock } from "./cell.mock";
+import { Cell, ClassCell } from "./Cell";
+import { cellMock, cellMock2 } from "./cell.mock";
 import { number } from "@storybook/addon-knobs";
 import { color } from "@storybook/addon-knobs";
 
@@ -12,7 +12,18 @@ export default {
 export const CellStory = () => {
   return (
     <div>
-      <Cell {...cellMock} />
+      <div>
+        functional component
+        <Cell {...cellMock} />
+      </div>
+      <div>
+        class component
+        <ClassCell {...cellMock} />
+      </div>
+      <div>
+        class components with disabled updates
+        <ClassCell {...cellMock2} />
+      </div>
     </div>
   );
 };
